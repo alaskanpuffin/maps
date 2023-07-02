@@ -26,6 +26,7 @@ import './bootstrap'
 import optionsController from './optionsController'
 import '../css/style.scss'
 
+import VueClipboard from 'vue-clipboard2'
 import Tooltip from '@nextcloud/vue/dist/Directives/Tooltip'
 import { emit } from '@nextcloud/event-bus'
 
@@ -45,6 +46,7 @@ L.Icon.Default.mergeOptions({
 
 // Vue
 Vue.directive('tooltip', Tooltip)
+Vue.use(VueClipboard)
 
 // eslint-disable-next-line
 'use strict'
